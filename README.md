@@ -2,7 +2,7 @@ gulp-browserify-coffeescript-seed
 ===================
 
 usage
-=====
+-------
 
 
 install dependencies:
