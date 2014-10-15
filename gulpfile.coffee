@@ -20,25 +20,19 @@ gulp.task 'watch', [
   gulp.watch 'src/index.html', ['html']
   # js watch handled by watchify
 
-gulp.task 'clean', ->
-  clean = require 'del'
-  gulp.src([
-      '.tmp'
-      'dist'
-    ],
-      read: false
-  ).pipe clean()
+gulp.task 'clean', (cb) ->
+  del = require 'del'
+  del [
+    'dist'
+  ], cb
 
-gulp.task 'reset', ->
-  gulp.src([
-    '.tmp'
+gulp.task 'reset', (cb) ->
+  del = require 'del'
+  del [
     'dist'
     'node_modules'
-    'src/bower_components'
     '.sass-cache'
-  ],
-    read: false
-  ).pipe clean()
+  ], cb
 
 gulp.task 'html', ->
   gulp.src 'src/index.html'
