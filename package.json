@@ -1,0 +1,36 @@
+{
+  "name": "angularjs-gulp-browserify-boilerplate",
+  "version": "0.0.1",
+  "description": "just like it sounds!",
+  "main": "dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spicydonuts/gulp-browserify-coffeescript-seed"
+  },
+  "author": "Michael Trotter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spicydonuts/gulp-browserify-coffeescript-seed/issues"
+  },
+  "homepage": "https://github.com/spicydonuts/gulp-browserify-coffeescript-seed",
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
+  },
+  "devDependencies": {
+    "browser-sync": "^1.5.8",
+    "browserify": "^5.9.1",
+    "coffee-script": "^1.8.0",
+    "coffeeify": "^0.7.0",
+    "del": "^0.1.3",
+    "gulp": "^3.8.6",
+    "gulp-jshint": "^1.8.3",
+    "gulp-notify": "^2.0.0",
+    "gulp-sass": "^1.1.0",
+    "gulp-util": "^3.0.1",
+    "pretty-hrtime": "^0.2.2",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^2.0.0"
+  }
+}
